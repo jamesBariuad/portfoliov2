@@ -25,22 +25,27 @@
         onclick="toggleMobileNav()"
         alt="menu"
         style="width: 80px"
-        class="ml-0"
+        class="absolute right-0"
+        id="hamburger-menu"
       />
     </header>
-     <div
+    <div
       id="mobile-nav"
       class="absolute top-0 w-full min-h-screen"
       style="display: none"
     >
-      <div id="overlay" class="w-full min-h-screen bg-black opacity-60 absolute top-0" style="z-index: 1;" ></div>
-      <nav class="absolute w-screen" style="z-index: 2;">
+      <div
+        id="overlay"
+        class="w-full min-h-screen bg-black opacity-60 absolute top-0"
+        style="z-index: 1"
+      ></div>
+      <nav class="absolute w-screen" style="z-index: 2">
         <img
           onclick="toggleMobileNav()"
           src="./assets/close.svg"
           alt="close-button"
           class="absolute top-0 right-0 opacity-100"
-          style="width: 80px;"
+          style="width: 80px"
         />
         <ul class="flex flex-col gap-y-5 place-content-center pt-20 pb-20">
           <li class="hover:bg-black pl-10">
@@ -57,6 +62,73 @@
           </li>
         </ul>
       </nav>
+    </div>
+
+    <!-- home -->
+    <div
+      class="h-96 flex items-center justify-center"
+      style="
+        background-image: url('./assets/emile-perron-xrVDYZRGdw4-unsplash.jpg');
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="text-white bg-black/50 p-5 rounded-lg">
+        Hello, I'm James,
+        <br />
+        <span class="text-teal-500 font-semibold">Web Developer</span>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div class="container mx-auto">
+      <div
+        class="min-h-full"
+        style="
+          background-image: url('./assets/background.svg');
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div
+          class="flex flex-col items-center justify-center relative pt-10 w-screen"
+        >
+          <img
+            src="./assets/PHOTO.jpg"
+            alt="jbphoto"
+            class="w-56 drop-shadow-lg"
+          />
+          <div class="absolute bottom-0 text-4xl text-white">
+            James
+            <br />
+            Bariuad
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 text-center">
+        <div class="text-4xl font-semibold">About Me</div>
+        <div class="pr-5 pl-5 opacity-60">
+          I graduated with an ECE degree, got good at solving problems. I like
+          challenges, so I switched to tech. Picked web dev because there are
+          always problems to solve in the internet era, and I plan to stick with
+          it for a long time
+        </div>
+      </div>
+    </div>
+
+    <!-- My Work -->
+    <div class="mt-16 container flex flex-col justify-center items-center">
+      <div class="text-4xl font-semibold text-center">My Work</div>
+      <div class="w-[250px] h-[200px] mt-10">
+        <div class="w-[250px] h-[120px] bg-slate-400"></div>
+        <div>
+          <div>Project Name</div>
+          <div>
+            Short description of the Project. Just a couple sentences will do
+          </div>
+        </div>
+        <div></div>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>
