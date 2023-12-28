@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Bariuad</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-slate-400 w-screen min-h-20 flex">
+      <img
+        src="./assets/logo.png"
+        alt="jb-logo"
+        class="w-30px"
+        style="width: 80px"
+      />
+      <img
+        src="./assets/menu.svg"
+        onclick="toggleMobileNav()"
+        alt="menu"
+        style="width: 80px"
+        class="ml-0"
+      />
+    </header>
+     <div
+      id="mobile-nav"
+      class="absolute top-0 w-full min-h-screen"
+      style="display: none"
+    >
+      <div id="overlay" class="w-full min-h-screen bg-black opacity-60 absolute top-0" style="z-index: 1;" ></div>
+      <nav class="absolute w-screen" style="z-index: 2;">
+        <img
+          onclick="toggleMobileNav()"
+          src="./assets/close.svg"
+          alt="close-button"
+          class="absolute top-0 right-0 opacity-100"
+          style="width: 80px;"
+        />
+        <ul class="flex flex-col gap-y-5 place-content-center pt-20 pb-20">
+          <li class="hover:bg-black pl-10">
+            <a href="#" class="text-5xl text-white">Home</a>
+          </li>
+          <li class="hover:bg-black pl-10">
+            <a href="" class="text-5xl text-white">About</a>
+          </li>
+          <li class="hover:bg-black pl-10">
+            <a href="" class="text-5xl text-white">Projects</a>
+          </li>
+          <li class="hover:bg-black pl-10">
+            <a href="" class="text-5xl text-white">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
