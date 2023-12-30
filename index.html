@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,24 +16,34 @@
     <header
       class="bg-slate-400 w-screen min-h-20 flex fixed top-0 z-40 shadow-md"
     >
-      <nav>
+      <nav class="flex justify-between w-full">
         <a href="#home">
           <img
-          src="./assets/logo.png"
-          alt="jb-logo"
-          class="w-30px"
-          style="width: 80px"
-        />
+            src="./assets/logo.png"
+            alt="jb-logo"
+            class="w-30px"
+            style="width: 80px"
+          />
         </a>
-        
+
         <img
           src="./assets/menu.svg"
           onclick="toggleMobileNav()"
           alt="menu"
           style="width: 80px"
-          class="absolute right-0 top-0"
+          class="absolute right-0 top-0 sm:hidden"
           id="hamburger-menu"
         />
+
+        <ul class="justify-center items-center gap-5 mr-3 hidden sm:flex">
+          <a href="#home"><li>Home</li></a>
+          
+          <a href="#about"><li>About</li></a>
+          
+          <a href="#projects"><li>Projects</li></a>
+
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
       </nav>
     </header>
     <div
@@ -45,7 +55,6 @@
         id="overlay"
         class="w-full min-h-screen bg-black opacity-70 absolute top-0"
         style="z-index: 1"
-       
       ></div>
       <nav class="absolute top-0 w-screen" style="z-index: 2">
         <img
@@ -72,38 +81,40 @@
       </nav>
     </div>
 
-    <!-- home -->
-    <div id="home"
-      class="h-96 flex items-center justify-center scroll-mt-[80px]"
-      style="
-        background-image: url('./assets/emile-perron-xrVDYZRGdw4-unsplash.jpg');
-        background-position: center;
-        background-size: cover;
-      "
-    >
-      <div class="text-white bg-black/50 p-5 rounded-lg text-center">
-        Hello!
-        <br>
-         I'm
-         
-          <span class="text-2xl text-teal-500">James</span>
-        <br />
-        <span class=" font-semibold text-2xl">Web Developer</span>
-      </div>
-    </div>
-
-    <!-- about -->
-    <div class="flex flex-col items-center gap-y-3 scroll-mt-[80px]" id="about">
+    <main>
+      <!-- home -->
       <div
-        class="min-h-full"
+        id="home"
+        class="h-96 flex items-center justify-center scroll-mt-[80px]"
         style="
-          background-image: url('./assets/background.svg');
+          background-image: url('./assets/emile-perron-xrVDYZRGdw4-unsplash.jpg');
           background-position: center;
           background-size: cover;
         "
       >
+        <div class="text-white bg-black/50 p-5 rounded-lg text-center">
+          Hello!
+          <br />
+          I'm
+
+          <span class="text-2xl text-teal-500">James</span>
+          <br />
+          <span class="font-semibold text-2xl">Web Developer</span>
+        </div>
+      </div>
+
+      <!-- about -->
+      <div
+        class="flex flex-col items-center gap-3 scroll-mt-[80px] relative overflow-clip"
+        id="about"
+      >
+        <img
+          class="absolute scale-[3] -z-50"
+          src="./assets/background.svg"
+          alt="slanted-bg"
+        />
         <div
-          class="flex flex-col items-center justify-center relative pt-10 w-screen"
+          class="flex flex-col items-center justify-center relative mt-10 w-screen"
         >
           <img
             src="./assets/PHOTO.jpg"
@@ -116,220 +127,227 @@
             Bariuad
           </div>
         </div>
-      </div>
-      <div class="mt-5 text-center">
-        <div class="text-4xl font-semibold">About Me</div>
-        <div class="pr-5 pl-5 opacity-60">
-          I graduated with an ECE degree, got good at solving problems. I like
-          challenges, so I switched to tech. Picked web dev because there are
-          always problems to solve in the internet era, and I plan to stick with
-          it for a long time
-        </div>
-      </div>
-      <div class="flex gap-2">
-        <a href="https://github.com/jamesBariuad" target="_blank">
-          <img
-            class="w-[30px]"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-        /></a>
-        <a href="https://www.linkedin.com/in/james-bariuad/" target="_blank">
-          <img
-            class="w-[30px]"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-        /></a>
-      </div>
-    </div>
 
-    <!-- My Work -->
-    <div class="mt-16 container flex flex-col justify-center items-center scroll-mt-[80px]" id="projects">
-      <div class="text-4xl font-semibold text-center mb-8 mt-3">My Work</div>
-      <!-- projects container -->
-      <div class="flex flex-wrap gap-10 items-center justify-center">
-        <!-- proj1 -->
-        <div class="w-[250px] shadow-lg">
-          <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
-          <div class="flex justify-between m-3">
-            <div class="ml-3 text-xl font-semibold">Project Name</div>
-            <div class="flex mr-3 gap-2">
-              <img
-                class="w-[20px]"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              />
-              <img
-                class="w-[20px]"
-                src="./assets/open-in-new.svg"
-                alt="open-in-new"
-              />
-            </div>
+        <div class="mt-5 text-center">
+          <div class="text-4xl font-semibold">About Me</div>
+          <div class="pr-5 pl-5 opacity-60 ">
+            I graduated with an ECE degree, got good at solving problems. I like
+            challenges, so I switched to tech. Picked web dev because there are
+            always problems to solve in the internet era, and I plan to stick
+            with it for a long time
           </div>
-
-          <div class="opacity-60 m-3">
-            Short description of the Project. Just a couple sentences will do
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-            cumque nihil libero, minima nisi odio magni iure cupiditate modi
-            amet ducimus labore debitis reprehenderit quidem dolorum excepturi
-            sit dolor accusamus.
-          </div>
-        </div>
-        <!-- proj2 -->
-
-        <div class="w-[250px] shadow-lg">
-          <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
-          <div class="flex justify-between m-3">
-            <div class="ml-3 text-xl font-semibold">Project Name</div>
-            <div class="flex mr-3 gap-2">
-              <img
-                class="w-[20px]"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              />
-              <img
-                class="w-[20px]"
-                src="./assets/open-in-new.svg"
-                alt="open-in-new"
-              />
-            </div>
-          </div>
-
-          <div class="opacity-60 m-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            expedita illo fuga sapiente alias adipisci excepturi, eius officia
-            sit saepe.
-          </div>
-        </div>
-        <!-- proj3 -->
-        <div class="w-[250px] shadow-lg">
-          <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
-          <div class="flex justify-between m-3">
-            <div class="ml-3 text-xl font-semibold">Project Name</div>
-            <div class="flex mr-3 gap-2">
-              <img
-                class="w-[20px]"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              />
-              <img
-                class="w-[20px]"
-                src="./assets/open-in-new.svg"
-                alt="open-in-new"
-              />
-            </div>
-          </div>
-
-          <div class="opacity-60 m-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            expedita illo fuga sapiente alias adipisci excepturi, eius officia
-            sit saepe.
-          </div>
-        </div>
-        <!-- proj4 -->
-        <div class="w-[250px] shadow-lg">
-          <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
-          <div class="flex justify-between m-3">
-            <div class="ml-3 text-xl font-semibold">Project Name</div>
-            <div class="flex mr-3 gap-2">
-              <img
-                class="w-[20px]"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              />
-              <img
-                class="w-[20px]"
-                src="./assets/open-in-new.svg"
-                alt="open-in-new"
-              />
-            </div>
-          </div>
-
-          <div class="opacity-60 m-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            expedita illo fuga sapiente alias adipisci excepturi, eius officia
-            sit saepe.
-          </div>
-        </div>
-        <!-- proj5 -->
-        <div class="w-[250px] shadow-lg">
-          <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
-          <div class="flex justify-between m-3">
-            <div class="ml-3 text-xl font-semibold">Project Name</div>
-            <div class="flex mr-3 gap-2">
-              <img
-                class="w-[20px]"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              />
-              <img
-                class="w-[20px]"
-                src="./assets/open-in-new.svg"
-                alt="open-in-new"
-              />
-            </div>
-          </div>
-
-          <div class="opacity-60 m-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            expedita illo fuga sapiente alias adipisci excepturi, eius officia
-            sit saepe.
-          </div>
-        </div>
-        <!-- proj6 -->
-        <div class="w-[250px] shadow-lg">
-          <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
-          <div class="flex justify-between m-3">
-            <div class="ml-3 text-xl font-semibold">Project Name</div>
-            <div class="flex mr-3 gap-2">
-              <img
-                class="w-[20px]"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              />
-              <img
-                class="w-[20px]"
-                src="./assets/open-in-new.svg"
-                alt="open-in-new"
-              />
-            </div>
-          </div>
-
-          <div class="opacity-60 m-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            expedita illo fuga sapiente alias adipisci excepturi, eius officia
-            sit saepe.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div
-      class="flex gap-y-5 flex-col items-center p-6 bg-slate-400 text-white mt-16 scroll-mt-[80px]"
-      id="contact"
-    >
-      <div class="text-center text-4xl font-semibold">Contact Me</div>
-      <div class="flex flex-col gap-5">
-        <div class="text-lg">
-          Please get in touch if you think our work could be mutually
-          beneficial!
-        </div>
-        <div>
-          1234 Random Road
-          <br />
-          Random Town,123456
-        </div>
-        <div>
-          555-123-1234
-          <br />
-          jamesbariuad@gmail.com
         </div>
         <div class="flex gap-2 justify-center">
           <a href="https://github.com/jamesBariuad" target="_blank">
             <img
-              class="w-[50px]"
+              class="w-[30px]"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
           /></a>
           <a href="https://www.linkedin.com/in/james-bariuad/" target="_blank">
             <img
-              class="w-[50px]"
+              class="w-[30px]"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
           /></a>
         </div>
       </div>
-    </div>
+
+      <!-- My Work -->
+      <div
+        class="mt-16 container flex flex-col justify-center items-center scroll-mt-[80px]"
+        id="projects"
+      >
+        <div class="text-4xl font-semibold text-center mb-8 mt-3">My Work</div>
+        <!-- projects container -->
+        <div class="flex flex-wrap gap-10 items-center justify-center">
+          <!-- proj1 -->
+          <div class="w-[250px] shadow-lg">
+            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="flex justify-between m-3">
+              <div class="ml-3 text-xl font-semibold">Project Name</div>
+              <div class="flex mr-3 gap-2">
+                <img
+                  class="w-[20px]"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                />
+                <img
+                  class="w-[20px]"
+                  src="./assets/open-in-new.svg"
+                  alt="open-in-new"
+                />
+              </div>
+            </div>
+
+            <div class="opacity-60 m-3">
+              Short description of the Project. Just a couple sentences will do
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+              cumque nihil libero, minima nisi odio magni iure cupiditate modi
+              amet ducimus labore debitis reprehenderit quidem dolorum excepturi
+              sit dolor accusamus.
+            </div>
+          </div>
+          <!-- proj2 -->
+
+          <div class="w-[250px] shadow-lg">
+            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="flex justify-between m-3">
+              <div class="ml-3 text-xl font-semibold">Project Name</div>
+              <div class="flex mr-3 gap-2">
+                <img
+                  class="w-[20px]"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                />
+                <img
+                  class="w-[20px]"
+                  src="./assets/open-in-new.svg"
+                  alt="open-in-new"
+                />
+              </div>
+            </div>
+
+            <div class="opacity-60 m-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              expedita illo fuga sapiente alias adipisci excepturi, eius officia
+              sit saepe.
+            </div>
+          </div>
+          <!-- proj3 -->
+          <div class="w-[250px] shadow-lg">
+            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="flex justify-between m-3">
+              <div class="ml-3 text-xl font-semibold">Project Name</div>
+              <div class="flex mr-3 gap-2">
+                <img
+                  class="w-[20px]"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                />
+                <img
+                  class="w-[20px]"
+                  src="./assets/open-in-new.svg"
+                  alt="open-in-new"
+                />
+              </div>
+            </div>
+
+            <div class="opacity-60 m-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              expedita illo fuga sapiente alias adipisci excepturi, eius officia
+              sit saepe.
+            </div>
+          </div>
+          <!-- proj4 -->
+          <div class="w-[250px] shadow-lg">
+            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="flex justify-between m-3">
+              <div class="ml-3 text-xl font-semibold">Project Name</div>
+              <div class="flex mr-3 gap-2">
+                <img
+                  class="w-[20px]"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                />
+                <img
+                  class="w-[20px]"
+                  src="./assets/open-in-new.svg"
+                  alt="open-in-new"
+                />
+              </div>
+            </div>
+
+            <div class="opacity-60 m-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              expedita illo fuga sapiente alias adipisci excepturi, eius officia
+              sit saepe.
+            </div>
+          </div>
+          <!-- proj5 -->
+          <div class="w-[250px] shadow-lg">
+            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="flex justify-between m-3">
+              <div class="ml-3 text-xl font-semibold">Project Name</div>
+              <div class="flex mr-3 gap-2">
+                <img
+                  class="w-[20px]"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                />
+                <img
+                  class="w-[20px]"
+                  src="./assets/open-in-new.svg"
+                  alt="open-in-new"
+                />
+              </div>
+            </div>
+
+            <div class="opacity-60 m-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              expedita illo fuga sapiente alias adipisci excepturi, eius officia
+              sit saepe.
+            </div>
+          </div>
+          <!-- proj6 -->
+          <div class="w-[250px] shadow-lg">
+            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="flex justify-between m-3">
+              <div class="ml-3 text-xl font-semibold">Project Name</div>
+              <div class="flex mr-3 gap-2">
+                <img
+                  class="w-[20px]"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                />
+                <img
+                  class="w-[20px]"
+                  src="./assets/open-in-new.svg"
+                  alt="open-in-new"
+                />
+              </div>
+            </div>
+
+            <div class="opacity-60 m-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              expedita illo fuga sapiente alias adipisci excepturi, eius officia
+              sit saepe.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div
+        class="flex gap-y-5 flex-col items-center p-6 bg-slate-400 text-white mt-16 scroll-mt-[80px]"
+        id="contact"
+      >
+        <div class="text-center text-4xl font-semibold">Contact Me</div>
+        <div class="flex flex-col gap-5">
+          <div class="text-lg">
+            Please get in touch if you think our work could be mutually
+            beneficial!
+          </div>
+          <div>
+            1234 Random Road
+            <br />
+            Random Town,123456
+          </div>
+          <div>
+            555-123-1234
+            <br />
+            jamesbariuad@gmail.com
+          </div>
+          <div class="flex gap-2 justify-center">
+            <a href="https://github.com/jamesBariuad" target="_blank">
+              <img
+                class="w-[50px]"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/james-bariuad/"
+              target="_blank"
+            >
+              <img
+                class="w-[50px]"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
   <script src="script.js"></script>
 </html>
