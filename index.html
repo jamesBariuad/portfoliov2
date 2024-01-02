@@ -35,7 +35,9 @@
           id="hamburger-menu"
         />
 
-        <ul class="justify-center items-center gap-5 mr-3 hidden font-mainText font-semibold sm:flex">
+        <ul
+          class="justify-center items-center gap-5 mr-3 hidden font-mainText font-semibold sm:flex"
+        >
           <a href="#home"><li>Home</li></a>
 
           <a href="#about"><li>About</li></a>
@@ -85,7 +87,7 @@
       <!-- home -->
       <div
         id="home"
-        class="h-96 flex items-center justify-center scroll-mt-[80px]"
+        class="h-96 flex items-center justify-center scroll-mt-[80px] h-screen"
         style="
           background-image: url('./assets/emile-perron-xrVDYZRGdw4-unsplash.jpg');
           background-position: center;
@@ -105,79 +107,91 @@
 
       <!-- about -->
       <div
-        class="flex flex-col items-center gap-3 scroll-mt-[80px] relative overflow-clip"
+        class="flex flex-col items-center gap-3 scroll-mt-[80px] relative overflow-clip lg:pb-36"
         id="about"
       >
         <img
-          class="absolute scale-[3] -z-50 sm:scale-[3]"
+          class="absolute scale-[3] -z-50 sm:scale-[1]"
           src="./assets/background.svg"
           alt="slanted-bg"
         />
-        <div
-          class="flex flex-col items-center justify-center relative mt-10 w-screen"
-        >
-          <img
-            src="./assets/PHOTO.jpg"
-            alt="jbphoto"
-            class="w-56 drop-shadow-lg sm:hidden"
-          />
-          <div class="absolute bottom-0 text-4xl text-white sm:hidden">
-            <!-- James
+        <div class="lg:mt-16">
+          <div
+            class="flex flex-col items-center justify-center relative mt-10 w-screen"
+          >
+            <img
+              src="./assets/PHOTO.jpg"
+              alt="jbphoto"
+              class="w-56 drop-shadow-lg sm:hidden"
+            />
+            <div class="absolute bottom-0 text-4xl text-white sm:hidden">
+              <!-- James
             <br />
             Bariuad -->
-          </div>
-        </div>
-
-        <div class="mt-5 text-center">
-          <img
-            src="./assets/PHOTO.jpg"
-            alt="jbphoto"
-            class="w-56 drop-shadow-lg hidden sm:block float-left ml-24 -mr-8 -translate-x-10"
-          />
-          <div class="text-center sm:bg-white sm:mx-24 sm:shadow-lg">
-            <div class="text-4xl font-bold font-mainText sm:mt-16 sm:py-3 sm:pt-10">About Me</div>
-            <div class="pr-5 pl-5 opacity-60 font-subText sm:px-10 sm:text-left sm:pb-10">
-              I graduated with an ECE degree, got good at solving problems. I
-              like challenges, so I switched to tech. Picked web dev because
-              there are always problems to solve in the internet era, and I plan
-              to stick with it for a long time Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Harum fugiat voluptas officia
-              distinctio architecto? Distinctio at voluptates nostrum fuga
-              recusandae?Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Aperiam sequi similique est voluptatibus, consequatur
-              tenetur error perferendis quod voluptate qui iusto maxime aut
-              rerum. Nesciunt voluptatem blanditiis sunt quo
-              soluta!loremfa-rotate-270
             </div>
           </div>
-        </div>
-        <div class="flex gap-2 justify-center">
-          <a href="https://github.com/jamesBariuad" target="_blank">
+
+          <div class="mt-5 text-center lg:flex items-center">
             <img
-              class="w-[30px]"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-          /></a>
-          <a href="https://www.linkedin.com/in/james-bariuad/" target="_blank">
-            <img
-              class="w-[30px]"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-          /></a>
+              src="./assets/PHOTO.jpg"
+              alt="jbphoto"
+              class="w-56 h-56 drop-shadow-lg hidden sm:block float-left sm:ml-24 sm:-mr-8 sm:-translate-x-10 lg:translate-x-10 lg:scale-[1.5]"
+            />
+            <div
+              class="text-center mb-5 sm:bg-white sm:mx-24 sm:shadow-lg lg:ml-0 lg:text-left lg:pl-16"
+            >
+              <div
+                class="text-4xl font-bold font-mainText sm:mt-16 sm:py-3 sm:pt-10 lg:mt-0 lg:pl-24 lg:pt-3"
+              >
+                About Me
+              </div>
+              <div
+                class="pr-5 pl-5 opacity-60 font-subText sm:px-10 sm:text-left sm:pb-5 lg:pl-24"
+              >
+                I graduated with an ECE degree, got good at solving problems. I
+                like challenges, so I switched to tech. Picked web dev because
+                there are always problems to solve in the internet era, and I
+                plan to stick with it for a long time.
+              </div>
+              <div
+                class="flex gap-2 justify-center pb-10 sm:justify-end sm:mr-10 lg:pb-3"
+              >
+                <a href="https://github.com/jamesBariuad" target="_blank">
+                  <img
+                    class="w-[30px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/james-bariuad/"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[30px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- My Work -->
       <div
-        class="mt-16 container flex flex-col justify-center items-center scroll-mt-[80px]"
+        class="mt-16 container flex flex-col justify-center items-center scroll-mt-[80px] lg:mt-0"
         id="projects"
       >
-        <div class="text-4xl font-bold font-mainText text-center mb-8 mt-3">My Work</div>
+        <div class="text-4xl font-bold font-mainText text-center mb-8 mt-3">
+          My Work
+        </div>
         <!-- projects container -->
         <div class="flex flex-wrap gap-10 items-center justify-center">
           <!-- proj1 -->
           <div class="w-[250px] shadow-lg">
             <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">Project Name</div>
+              <div class="ml-3 text-xl font-semibold font-mainText">
+                Project Name
+              </div>
               <div class="flex mr-3 gap-2">
                 <img
                   class="w-[20px]"
@@ -203,7 +217,9 @@
           <div class="w-[250px] shadow-lg">
             <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">Project Name</div>
+              <div class="ml-3 text-xl font-semibold font-mainText">
+                Project Name
+              </div>
               <div class="flex mr-3 gap-2">
                 <img
                   class="w-[20px]"
@@ -227,7 +243,9 @@
           <div class="w-[250px] shadow-lg">
             <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">Project Name</div>
+              <div class="ml-3 text-xl font-semibold font-mainText">
+                Project Name
+              </div>
               <div class="flex mr-3 gap-2">
                 <img
                   class="w-[20px]"
@@ -251,7 +269,9 @@
           <div class="w-[250px] shadow-lg">
             <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">Project Name</div>
+              <div class="ml-3 text-xl font-semibold font-mainText">
+                Project Name
+              </div>
               <div class="flex mr-3 gap-2">
                 <img
                   class="w-[20px]"
@@ -275,7 +295,9 @@
           <div class="w-[250px] shadow-lg">
             <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">Project Name</div>
+              <div class="ml-3 text-xl font-semibold font-mainText">
+                Project Name
+              </div>
               <div class="flex mr-3 gap-2">
                 <img
                   class="w-[20px]"
@@ -299,7 +321,9 @@
           <div class="w-[250px] shadow-lg">
             <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">Project Name</div>
+              <div class="ml-3 text-xl font-semibold font-mainText">
+                Project Name
+              </div>
               <div class="flex mr-3 gap-2">
                 <img
                   class="w-[20px]"

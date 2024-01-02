@@ -733,16 +733,12 @@ video {
   margin: 0.75rem;
 }
 
-.-mr-8 {
-  margin-right: -2rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.ml-24 {
-  margin-left: 6rem;
 }
 
 .ml-3 {
@@ -771,10 +767,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-\[80px\] {
-  margin-top: 80px;
 }
 
 .box-border {
@@ -876,12 +868,20 @@ video {
   display: none;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
 .h-96 {
   height: 24rem;
 }
 
 .h-\[120px\] {
   height: 120px;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .min-h-20 {
@@ -970,11 +970,6 @@ video {
 
 .border-separate {
   border-collapse: separate;
-}
-
-.-translate-x-10 {
-  --tw-translate-x: -2.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-\[3\] {
@@ -2066,6 +2061,10 @@ video {
   padding: 1.5rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -2181,14 +2180,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-black {
-  font-weight: 900;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .uppercase {
@@ -2701,6 +2692,18 @@ video {
     margin-right: 6rem;
   }
 
+  .sm\:-mr-8 {
+    margin-right: -2rem;
+  }
+
+  .sm\:ml-24 {
+    margin-left: 6rem;
+  }
+
+  .sm\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
   .sm\:mt-16 {
     margin-top: 4rem;
   }
@@ -2717,10 +2720,19 @@ video {
     display: none;
   }
 
-  .sm\:scale-\[3\] {
-    --tw-scale-x: 3;
-    --tw-scale-y: 3;
+  .sm\:-translate-x-10 {
+    --tw-translate-x: -2.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:scale-\[1\] {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
   }
 
   .sm\:bg-white {
@@ -2738,8 +2750,8 @@ video {
     padding-bottom: 0.75rem;
   }
 
-  .sm\:pb-10 {
-    padding-bottom: 2.5rem;
+  .sm\:pb-5 {
+    padding-bottom: 1.25rem;
   }
 
   .sm\:pt-10 {
@@ -2758,6 +2770,88 @@ video {
     --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:translate-x-10 {
+    --tw-translate-x: 2.5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:scale-\[1\.5\] {
+    --tw-scale-x: 1.5;
+    --tw-scale-y: 1.5;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:p-36 {
+    padding: 9rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:pb-96 {
+    padding-bottom: 24rem;
+  }
+
+  .lg\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .lg\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .lg\:pt-3 {
+    padding-top: 0.75rem;
+  }
+
+  .lg\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:pb-48 {
+    padding-bottom: 12rem;
+  }
+
+  .lg\:pb-64 {
+    padding-bottom: 16rem;
+  }
+
+  .lg\:pb-40 {
+    padding-bottom: 10rem;
+  }
+
+  .lg\:pb-36 {
+    padding-bottom: 9rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
 
