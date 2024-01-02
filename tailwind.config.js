@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        mainText: "Montserrat",
-        subText:"Merriweather",
+        mainText: ["Montserrat"],
+        subText:["Merriweather"],
       }
     },
   },
