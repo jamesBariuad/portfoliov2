@@ -14,7 +14,7 @@
   </head>
   <body>
     <header
-      class="bg-slate-400 w-screen min-h-20 flex fixed top-0 z-40 shadow-md px-10"
+      class="bg-primary text-white w-screen min-h-20 flex fixed top-0 z-40 shadow-md sm:px-10"
     >
       <nav class="flex justify-between w-full">
         <a href="#home">
@@ -31,7 +31,7 @@
           onclick="toggleMobileNav()"
           alt="menu"
           style="width: 80px"
-          class="absolute right-0 top-0 sm:hidden"
+          class="absolute right-0 top-0 sm:hidden invert"
           id="hamburger-menu"
         />
 
@@ -63,7 +63,7 @@
           onclick="toggleMobileNav()"
           src="./assets/close.svg"
           alt="close-button"
-          class="absolute top-0 right-0 opacity-100"
+          class="absolute top-0 right-0 opacity-100 invert"
           style="width: 80px"
         />
         <ul class="flex flex-col gap-y-5 place-content-center pt-20 pb-20">
@@ -87,7 +87,7 @@
       <!-- home -->
       <div
         id="home"
-        class="h-96 flex items-center justify-center scroll-mt-[80px] h-screen"
+        class="h-96 flex items-center justify-center scroll-mt-[80px] h-screen brightness-[0.9]"
         style="
           background-image: url('./assets/emile-perron-xrVDYZRGdw4-unsplash.jpg');
           background-position: center;
@@ -95,13 +95,9 @@
         "
       >
         <div class="text-white bg-black/50 p-5 rounded-lg text-center">
-          Hello!
+          Hello! I'm James.
           <br />
-          I'm
-
-          <span class="text-2xl text-teal-500">James</span>
-          <br />
-          <span class="font-semibold text-2xl">Web Developer</span>
+          <span class="font-semibold text-2xl">Web Developer.</span>
         </div>
       </div>
 
@@ -111,7 +107,7 @@
         id="about"
       >
         <img
-          class="absolute scale-[3] -z-50 sm:scale-[1]"
+          class="absolute scale-[3] -z-50 sm:scale-[1] xl:-translate-y-48"
           src="./assets/background.svg"
           alt="slanted-bg"
         />
@@ -120,7 +116,7 @@
             class="flex flex-col items-center justify-center relative mt-10 w-screen"
           >
             <img
-              src="./assets/PHOTO.jpg"
+              src="./assets/PHOTO.png"
               alt="jbphoto"
               class="w-56 drop-shadow-lg sm:hidden"
             />
@@ -133,28 +129,29 @@
 
           <div class="mt-5 text-center lg:flex items-center xl:p-20 2xl:p-48">
             <img
-              src="./assets/PHOTO.jpg"
+              src="./assets/PHOTO.png"
               alt="jbphoto"
-              class="w-56 h-56 drop-shadow-lg hidden sm:block float-left sm:ml-24 sm:-mr-8  sm:-mt-16 sm:-translate-x-10 lg:translate-x-10 lg:my-auto lg:scale-[1.5]"
+              class="w-56 h-56 drop-shadow-lg hidden sm:block float-left sm:ml-24 sm:-mr-8 sm:-mt-16 sm:-translate-x-10 lg:translate-x-10 lg:my-auto lg:scale-[1.5]"
             />
             <div
               class="text-center mb-5 sm:bg-white sm:mx-24 sm:shadow-lg lg:ml-0 lg:text-left lg:pl-16"
             >
               <div
-                class="text-4xl font-bold font-mainText sm:mt-16 sm:py-3 sm:pt-10 lg:mt-0 lg:pl-24 lg:pt-3"
+                class="text-4xl font-bold font-mainText sm:mt-16 sm:py-3 sm:pt-10 lg:mt-0 lg:pl-24 lg:pt-5"
               >
                 About Me
               </div>
               <div
                 class="pr-5 pl-5 opacity-60 font-subText sm:px-10 sm:text-left sm:pb-5 lg:pl-24"
               >
-                I graduated with an ECE degree, got good at solving problems. I
-                like challenges, so I switched to tech. Picked web dev because
-                there are always problems to solve in the internet era, and I
-                plan to stick with it for a long time.
+                I graduated with an Electronics and Communications Engineering
+                degree, got good at solving problems. I like challenges, so I
+                switched to tech. Picked web dev because there are always
+                problems to solve in the internet era, and I plan to stick with
+                it for a long time.
               </div>
               <div
-                class="flex gap-2 justify-center pb-10 sm:justify-end sm:mr-10 lg:pb-3"
+                class="flex gap-2 justify-center pb-10 sm:justify-end sm:mr-10 lg:pb-4"
               >
                 <a href="https://github.com/jamesBariuad" target="_blank">
                   <img
@@ -177,7 +174,7 @@
 
       <!-- My Work -->
       <div
-        class="mt-16 flex flex-col justify-center items-center scroll-mt-[80px] lg:mt-0"
+        class="mt-16 flex flex-col justify-center items-center scroll-mt-[80px] lg:mt-0 xl:px-48 2xl:px-[400px]"
         id="projects"
       >
         <div class="text-4xl font-bold font-mainText text-center mb-8 mt-3">
@@ -186,11 +183,11 @@
         <!-- projects container -->
         <div class="flex flex-wrap gap-10 items-center justify-center">
           <!-- proj1 -->
-          <div class="w-[250px] h-[300px] shadow-lg">
-            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+          <div class="w-[250px] h-[350px] shadow-lg">
+            <div class="w-[250px] h-[150px] bg-slate-400">photo</div>
             <div class="flex justify-between overflow-auto m-3">
               <div class="ml-3 text-xl font-semibold font-mainText">
-                Project Name
+                PAOFI TRACKING APP
               </div>
               <div class="flex mr-3 gap-2">
                 <img
@@ -205,7 +202,9 @@
               </div>
             </div>
 
-            <div class="opacity-60 m-3 font-subText overflow-auto max-h-[120px]">
+            <div
+              class="opacity-60 m-3 font-subText overflow-auto max-h-[120px]"
+            >
               Short description of the Project. Just a couple sentences will do
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
               cumque nihil libero, minima nisi odio magni iure cupiditate modi
@@ -215,28 +214,42 @@
           </div>
           <!-- proj2 -->
           <div class="w-[250px] shadow-lg">
-            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="w-[250px] bg-slate-400">
+              <img
+                src="./assets/thumbnails/weather-app.png"
+                alt="weather-app-thumbnail"
+              />
+            </div>
             <div class="flex justify-between m-3">
               <div class="ml-3 text-xl font-semibold font-mainText">
-                Project Name
+                Weather App
               </div>
               <div class="flex mr-3 gap-2">
-                <img
-                  class="w-[20px]"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                />
-                <img
-                  class="w-[20px]"
-                  src="./assets/open-in-new.svg"
-                  alt="open-in-new"
-                />
+                <a
+                  href="https://github.com/jamesBariuad/odin-weather-app"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                /></a>
+
+                <a
+                  href="https://jamesbariuad.github.io/odin-weather-app/"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="./assets/open-in-new.svg"
+                    alt="open-in-new"
+                /></a>
               </div>
             </div>
 
             <div class="opacity-60 m-3 font-subText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              expedita illo fuga sapiente alias adipisci excepturi, eius officia
-              sit saepe.
+              A weather app that combines great design, smooth functionality,
+              and real-time data to keep users easily informed about the
+              weather.
             </div>
           </div>
           <!-- proj3 -->
@@ -348,7 +361,7 @@
 
       <!-- Contact Section -->
       <div
-        class="flex gap-y-5 flex-col items-center p-6 bg-slate-400 text-white mt-16 scroll-mt-[80px]"
+        class="flex gap-y-5 flex-col items-center p-6 bg-primary text-white mt-16 scroll-mt-[80px] mt-32"
         id="contact"
       >
         <div class="text-center text-4xl font-semibold">Contact Me</div>
@@ -370,7 +383,7 @@
           <div class="flex gap-2 justify-center">
             <a href="https://github.com/jamesBariuad" target="_blank">
               <img
-                class="w-[50px]"
+                class="w-[50px] invert"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
             /></a>
             <a
@@ -378,7 +391,7 @@
               target="_blank"
             >
               <img
-                class="w-[50px]"
+                class="w-[50px] invert"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
             /></a>
           </div>

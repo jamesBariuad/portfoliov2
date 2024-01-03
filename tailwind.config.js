@@ -6,6 +6,10 @@ module.exports = {
       fontFamily:{
         mainText: ["Montserrat"],
         subText:["Merriweather"],
+      },
+      colors:{
+        "primary": '#075a5c',
+        "secondary": '#0dadb1'
       }
     },
   },
