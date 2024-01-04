@@ -31,7 +31,7 @@
           onclick="toggleMobileNav()"
           alt="menu"
           style="width: 80px"
-          class="absolute right-0 top-0 sm:hidden invert"
+          class="absolute right-0 top-0 sm:hidden"
           id="hamburger-menu"
         />
 
@@ -94,12 +94,19 @@
           background-size: cover;
         "
       >
-        <div class="text-white bg-black/50 p-5 rounded-lg text-center z-10 ">
+        <div
+          class="text-white bg-black/70 p-5 rounded-lg text-center z-10 font-subText p-10 sm:text-lg 2xl:text-xl"
+        >
           Hello! I'm James.
           <br />
-          <span class="font-semibold text-2xl">Web Developer.</span>
+          <span
+            class="font-semibold text-2xl font-mainText text-secondary sm:text-3xl 2xl:text-3xl"
+            >Web Developer.</span
+          >
         </div>
-        <div class="blur-3-xl bg-black opacity-15 w-full h-screen absolute"></div>
+        <div
+          class="blur-3-xl bg-black opacity-15 w-full h-screen absolute"
+        ></div>
       </div>
       <!-- about -->
       <div
@@ -174,37 +181,49 @@
 
       <!-- My Work -->
       <div
-        class="mt-16 flex flex-col justify-center items-center scroll-mt-[80px] lg:mt-0 xl:px-48 2xl:px-[300px]"
+        class="mt-16 flex flex-col justify-center items-center scroll-mt-[80px] lg:mt-0 xl:px-48 2xl:px-[400px]"
         id="projects"
       >
         <div class="text-4xl font-bold font-mainText text-center mb-8 mt-3">
           My Work
         </div>
         <!-- projects container -->
-        <div class="flex flex-wrap gap-10 items-center justify-center">
+        <div class="flex flex-wrap gap-10 items-stretch justify-center">
           <!-- proj1 -->
-          <div class="w-[250px] h-[350px] shadow-lg">
-            <div class="w-[250px] h-[150px] bg-slate-400">photo</div>
-            <div class="flex justify-between overflow-auto m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">
-                PAOFI TRACKING APP
+          <div class="w-[250px] shadow-lg">
+            <div class="w-[250px]">
+              <img
+                src="./assets/thumbnails/weather-app.png"
+                alt="weather-app-thumbnail"
+              />
+            </div>
+            <div class="flex justify-between m-3">
+              <div class="text-xl font-semibold font-mainText">
+                PAOFI Tracking App
               </div>
-              <div class="flex mr-3 gap-2">
-                <img
-                  class="w-[20px]"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                />
-                <img
-                  class="w-[20px]"
-                  src="./assets/open-in-new.svg"
-                  alt="open-in-new"
-                />
+              <div class="flex mr-3 gap-2 items-center">
+                <a
+                  href="https://github.com/jamesBariuad/odin-weather-app"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                /></a>
+
+                <a
+                  href="https://jamesbariuad.github.io/odin-weather-app/"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="./assets/open-in-new.svg"
+                    alt="open-in-new"
+                /></a>
               </div>
             </div>
 
-            <div
-              class="opacity-60 m-3 font-subText overflow-auto max-h-[120px]"
-            >
+            <div class="opacity-60 m-3 font-subText">
               Short description of the Project. Just a couple sentences will do
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
               cumque nihil libero, minima nisi odio magni iure cupiditate modi
@@ -214,17 +233,15 @@
           </div>
           <!-- proj2 -->
           <div class="w-[250px] shadow-lg">
-            <div class="w-[250px] bg-slate-400">
+            <div class="w-[250px]">
               <img
                 src="./assets/thumbnails/weather-app.png"
                 alt="weather-app-thumbnail"
               />
             </div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">
-                Weather App
-              </div>
-              <div class="flex mr-3 gap-2">
+              <div class="text-xl font-semibold font-mainText">Weather App</div>
+              <div class="flex mr-3 gap-2 items-center">
                 <a
                   href="https://github.com/jamesBariuad/odin-weather-app"
                   target="_blank"
@@ -254,106 +271,200 @@
           </div>
           <!-- proj3 -->
           <div class="w-[250px] shadow-lg">
-            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="w-[250px]">
+              <img
+                src="./assets/thumbnails/la carinderia.png"
+                alt="la-carinderia-thumbnail"
+              />
+            </div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">
-                Project Name
+              <div class="text-xl font-semibold font-mainText">
+                La Carinderia
               </div>
               <div class="flex mr-3 gap-2">
-                <img
-                  class="w-[20px]"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                />
-                <img
-                  class="w-[20px]"
-                  src="./assets/open-in-new.svg"
-                  alt="open-in-new"
-                />
+                <a
+                  href="https://github.com/jamesBariuad/odin-restaurant"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                /></a>
+
+                <a
+                  href="https://jamesbariuad.github.io/odin-restaurant/"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="./assets/open-in-new.svg"
+                    alt="open-in-new"
+                /></a>
               </div>
             </div>
 
             <div class="opacity-60 m-3 font-subText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              expedita illo fuga sapiente alias adipisci excepturi, eius officia
-              sit saepe.
+              A restaurant website made with Webpack. It displays the menu,
+              location, and key details about the restaurant. Webpack is used to
+              organize and manage the project's assets and dependencies.
             </div>
           </div>
           <!-- proj4 -->
           <div class="w-[250px] shadow-lg">
-            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="w-[250px]">
+              <img
+                src="./assets/thumbnails/calculator.png"
+                alt="calculator-thumbnail"
+              />
+            </div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">
-                Project Name
-              </div>
+              <div class="text-xl font-semibold font-mainText">Calculator</div>
               <div class="flex mr-3 gap-2">
-                <img
-                  class="w-[20px]"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                />
-                <img
-                  class="w-[20px]"
-                  src="./assets/open-in-new.svg"
-                  alt="open-in-new"
-                />
+                <a
+                  href="https://github.com/jamesBariuad/odin-calculator"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  />
+                </a>
+
+                <a
+                  href="https://jamesbariuad.github.io/odin-calculator/"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="./assets/open-in-new.svg"
+                    alt="open-in-new"
+                /></a>
               </div>
             </div>
 
             <div class="opacity-60 m-3 font-subText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              expedita illo fuga sapiente alias adipisci excepturi, eius officia
-              sit saepe.
+              A restaurant website made with Webpack. It displays the menu,
+              location, and key details about the restaurant. Webpack is used to
+              organize and manage the project's assets and dependencies.
             </div>
           </div>
           <!-- proj5 -->
           <div class="w-[250px] shadow-lg">
-            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="w-[250px]">
+              <img
+                src="./assets/thumbnails/etch-a-sketch.png"
+                alt="etch-a-sketch-thumbnail"
+              />
+            </div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">
-                Project Name
+              <div class="text-xl font-semibold font-mainText">
+                Etch-a-Sketch
               </div>
               <div class="flex mr-3 gap-2">
-                <img
-                  class="w-[20px]"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                />
-                <img
-                  class="w-[20px]"
-                  src="./assets/open-in-new.svg"
-                  alt="open-in-new"
-                />
+                <a
+                  href="https://github.com/jamesBariuad/odin-etch-a-sketch"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                /></a>
+
+                <a
+                  href="https://jamesbariuad.github.io/odin-etch-a-sketch/"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="./assets/open-in-new.svg"
+                    alt="open-in-new"
+                /></a>
               </div>
             </div>
 
             <div class="opacity-60 m-3 font-subText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              expedita illo fuga sapiente alias adipisci excepturi, eius officia
-              sit saepe.
+              A restaurant website made with Webpack. It displays the menu,
+              location, and key details about the restaurant. Webpack is used to
+              organize and manage the project's assets and dependencies.
             </div>
           </div>
           <!-- proj6 -->
           <div class="w-[250px] shadow-lg">
-            <div class="w-[250px] h-[120px] bg-slate-400">photo</div>
+            <div class="w-[250px]">
+              <img
+                src="./assets/thumbnails/rps.png"
+                alt="rock,paper,scissors-thumbnail"
+              />
+            </div>
             <div class="flex justify-between m-3">
-              <div class="ml-3 text-xl font-semibold font-mainText">
-                Project Name
+              <div class="text-xl font-semibold font-mainText">
+                Rock, Paper, Scissors
               </div>
               <div class="flex mr-3 gap-2">
-                <img
-                  class="w-[20px]"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                />
-                <img
-                  class="w-[20px]"
-                  src="./assets/open-in-new.svg"
-                  alt="open-in-new"
-                />
+                <a
+                  href="https://github.com/jamesBariuad/odin-rock-paper-scissors"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                /></a>
+
+                <a
+                  href="https://jamesbariuad.github.io/odin-rock-paper-scissors/"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="./assets/open-in-new.svg"
+                    alt="open-in-new"
+                /></a>
               </div>
             </div>
 
             <div class="opacity-60 m-3 font-subText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              expedita illo fuga sapiente alias adipisci excepturi, eius officia
-              sit saepe.
+              A restaurant website made with Webpack. It displays the menu,
+              location, and key details about the restaurant. Webpack is used to
+              organize and manage the project's assets and dependencies.
+            </div>
+          </div>
+          <!--proj7-->
+          <div class="w-[250px] shadow-lg">
+            <div class="w-[250px]">
+              <img
+                src="./assets/thumbnails/tictactoe.png"
+                alt="tictactoe-thumbnail"
+              />
+            </div>
+            <div class="flex justify-between m-3">
+              <div class="text-xl font-semibold font-mainText">Tic-Tac-Toe</div>
+              <div class="flex mr-3 gap-2">
+                <a
+                  href="https://github.com/jamesBariuad/odin-tictactoe"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                /></a>
+
+                <a
+                  href="https://jamesbariuad.github.io/odin-tictactoe/"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[20px]"
+                    src="./assets/open-in-new.svg"
+                    alt="open-in-new"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="opacity-60 m-3 font-subText">
+              A restaurant website made with Webpack. It displays the menu,
+              location, and key details about the restaurant. Webpack is used to
+              organize and manage the project's assets and dependencies.
             </div>
           </div>
         </div>
@@ -375,7 +486,7 @@
             <br />
             Quirino,3400
           </div>
-          <div> 
+          <div>
             +639760031943
             <br />
             jamesbariuad@gmail.com
