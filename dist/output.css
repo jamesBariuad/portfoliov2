@@ -665,6 +665,42 @@ video {
   top: 0px;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.right-0\.5 {
+  right: 0.125rem;
+}
+
+.top-0\.5 {
+  top: 0.125rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -771,6 +807,14 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .box-border {
